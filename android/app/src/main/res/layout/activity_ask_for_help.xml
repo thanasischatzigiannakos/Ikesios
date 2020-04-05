@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskForHelp">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="ΔΗΛΩΣΗ ΖΗΤΗΣΗΣ ΒΟΗΘΕΙΑΣ"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Ζητάτε βοήθεια για εσάς ή για κάποιον άλλον ;"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+
+                android:id="@+id/groupradio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/radia_id1"
+                    android:layout_width="fill_parent"
+                    android:theme="@style/RadioButton"
+                    android:layout_height="wrap_content"
+                    android:text="Για Εμένα"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radia_id2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Για κάποιον άλλο"
+                    android:textSize="20sp" />
+
+
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Τι βοήθεια θα θέλατε;"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:theme="@style/checkBoxStyle"
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="20dp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Βοήθεια με τα ψώνια (φαρμακείο, supermarket, κλπ)" />
+            <CheckBox
+                android:theme="@style/checkBoxStyle"
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="20dp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Βοήθεια στο σπίτι (καθαρισμός, τακτοποίηση, μεταφορές επίπλων)" />
+            <CheckBox
+                android:theme="@style/checkBoxStyle"
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="20dp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Βοήθεια σε κάτι τεχνολογικό (internet, υπολογιστής, κάμερα)" />
+            <CheckBox
+                android:theme="@style/checkBoxStyle"
+                android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="20dp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Κάποιον να μιλήσω, τηλεφωνικά ή μέσω internet" />
+            <CheckBox
+                android:theme="@style/checkBoxStyle"
+                android:id="@+id/checkbox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="20dp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Ιατρική βοήθεια" />
+            <CheckBox
+                android:theme="@style/checkBoxStyle"
+                android:id="@+id/checkbox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="20dp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Άλλο" />
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Θέλετε τα στοιχεία να τα δούν οι πιθανοί εθελοντές ώστε να επικοινωνήσουν για παροχή βοήθειας ;"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+            <RadioGroup
+
+                android:id="@+id/groupradio2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/radia_id3"
+                    android:layout_width="fill_parent"
+                    android:theme="@style/RadioButton"
+                    android:layout_height="wrap_content"
+                    android:text="NAI"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radia_id4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OXI"
+                    android:textSize="20sp" />
+
+
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Θέλετε τα στοιχεία προωθηθούν στο Δήμο σας ή σε άλλη Δημόσια Υπηρεσία ώστε να επικοινωνήσουν για παροχή βοήθειας ;"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+
+                android:id="@+id/groupradio3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/radia_id5"
+                    android:layout_width="fill_parent"
+                    android:theme="@style/RadioButton"
+                    android:layout_height="wrap_content"
+                    android:text="NAI"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radia_id6"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OXI"
+                    android:textSize="20sp" />
+
+
+
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/submit_help"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginVertical="20dp"
+                android:layout_gravity="bottom"
+                android:text="Υποβολη Δηλωσης"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

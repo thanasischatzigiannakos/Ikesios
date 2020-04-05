@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".DiseaseStateme"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Δήλωση Ασθένειας"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Τα στοιχεία που θα δηλώσετε αφορούν:"
+        android:textStyle="bold"
+        android:textColor="#000400"
+        android:textSize="20sp"
+        />
+
+    <!-- add RadioGroup which contain the many RadioButton-->
+    <RadioGroup
+
+        android:id="@+id/groupradio"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <!-- In RadioGroup create the 1 Radio Button-->
+        <!-- like this we will add some more Radio Button-->
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id1"
+            android:text="Εμένα"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id2"
+            android:text="Κάποιον άλλο που διαμένει μαζί μου"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id3"
+            android:textColor="#000400"
+            android:text="Κάποιον άλλο που δεν διαμένει μαζί μου αλλα τον φροντίζω"
+            android:textSize="20sp"/>
+
+
+    </RadioGroup>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Έχω προσβληθεί απο κορωνοϊό"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="#000400"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+
+        android:id="@+id/groupradio1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- In RadioGroup create the 1 Radio Button-->
+        <!-- like this we will add some more Radio Button-->
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id4"
+            android:text="Ναι"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id5"
+            android:text="Οχι"
+            android:textSize="20sp"/>
+
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Πως το πιστοποιήσατε? "
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+
+        android:id="@+id/groupradio3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <!-- In RadioGroup create the 1 Radio Button-->
+        <!-- like this we will add some more Radio Button-->
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id6"
+            android:text="Με εξέταση απο ιατρο που βρήκε μεγάλη πιθανότητα"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id7"
+            android:text="Με εξέταση αίματος σε κατάλληλο νοσοκομείο ή εργαστήριο(σε ποιο?)"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id8"
+            android:text="Με άλλο τρόπο"
+            android:textSize="20sp"/>
+
+
+
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ποτε έγινε η πιστοποίηση? "
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:background="#397AC6"
+        android:hint="Επιλέξτε την ημερομηνια"
+        android:padding="15dp"
+        android:textColor="#212529 "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ποτε έγινε εισαγωγη στο νοσοκομειο? "
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/date2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:background="#397AC6"
+        android:hint="Επιλέξτε την ημερομηνια"
+        android:padding="15dp"
+        android:textColor="#212529 "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Σε ποιο νοσοκομείο? "
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="#212529 "
+        android:background="#397AC6"
+        android:textSize="20sp"></EditText>
+
+    <Button
+        android:id="@+id/submit_asthenia"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginVertical="20dp"
+        android:layout_gravity="bottom"
+        android:text="Υποβολη Δηλωσης"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
+        android:textSize="30sp" />
+
+        </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>
