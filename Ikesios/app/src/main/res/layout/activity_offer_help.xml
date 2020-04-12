@@ -23,7 +23,7 @@
     <CheckBox
         android:id="@+id/checkbox1"
         android:layout_width="361dp"
-        android:layout_height="24dp"
+        android:layout_height="48dp"
         android:layout_marginVertical="5dp"
         android:buttonTint="@color/colorPrimary"
         android:onClick="onCheckboxClicked"
