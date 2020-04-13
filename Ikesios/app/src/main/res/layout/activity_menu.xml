@@ -1,8 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Help">
 
-</RelativeLayout>
+
+    <Button
+        android:id="@+id/covidstatus"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="371dp"
+        android:layout_height="89dp"
+        android:text="δηλωση καταστασης σχετικα με τον COVID-19"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126"
+        app:rippleColor="@color/primaryDark"
+        app:strokeColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/diseasestatement"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="371dp"
+        android:layout_height="89dp"
+        android:text="δηλωση ασθενειας σχετικα με τον covid-19"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/covidstatus"
+        app:layout_constraintVertical_bias="0.074"
+        app:rippleColor="@color/primaryDark"
+        app:strokeColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/checksymptoms"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="371dp"
+        android:layout_height="89dp"
+        android:text="ελεγχος συμπτωματων"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help"
+        app:layout_constraintVertical_bias="0.205"
+        app:rippleColor="@color/primaryDark"
+        app:strokeColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/help"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="371dp"
+        android:layout_height="89dp"
+        android:text="σύστημα βοήθειας"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diseasestatement"
+        app:layout_constraintVertical_bias="0.098"
+        app:rippleColor="@color/primaryDark"
+        app:strokeColor="@color/colorPrimary" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

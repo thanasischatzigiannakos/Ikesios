@@ -17,9 +17,10 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.532"
+        app:layout_constraintVertical_bias="0.442"
         app:rippleColor="@color/primaryDark"
         app:strokeColor="@color/colorPrimary" />
 
@@ -41,16 +42,16 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="374dp"
-        android:layout_height="98dp"
+        android:layout_width="315dp"
+        android:layout_height="87dp"
         android:text="Θα θέλατε να ζητήσετε ή να προσφέρετε βοήθεια;"
         android:textColor="@color/primaryDark"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225" />
+        app:layout_constraintVertical_bias="0.222" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

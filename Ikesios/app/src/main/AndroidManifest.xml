@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AskHelp"></activity>
+        <activity android:name=".Disease_Habit"></activity>
+        <activity android:name=".Other_End" />
+        <activity android:name=".Other_Statement" />
+        <activity android:name=".CovidStatus" />
+        <activity android:name=".AskHelp" />
         <activity android:name=".OfferHelp" />
         <activity android:name=".Help" />
         <activity android:name=".Menu" />

@@ -36,12 +36,24 @@ Button login,register,about,developers;
             }
         });
 
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMenu();
+            }
+        });
+
 
 
     }
 
     public void openNewActivity(){
         Intent intent = new Intent(this, Register.class);
+        startActivity(intent);
+    }
+
+    public void openMenu(){
+        Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
     }
 }
