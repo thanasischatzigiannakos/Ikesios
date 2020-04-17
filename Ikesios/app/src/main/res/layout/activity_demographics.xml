@@ -564,7 +564,7 @@
                 android:id="@+id/checkbox14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:textSize="20dp"
                 android:buttonTint="@color/colorPrimary"
                 android:onClick="onCheckboxClicked"

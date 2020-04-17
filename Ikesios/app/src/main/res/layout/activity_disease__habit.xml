@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    tools:context=".Situation">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="387dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Συμπληρώστε τα παρακάτω στοιχεία για το άτομο για το οποίο κάνετε τη δήλωση"
+                android:textColor="@color/primaryDark"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Καρδιακές παθήσεις"
+                android:textColor="@color/primaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Καρδιακή αρρυθμία" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Στένωση ή απόφραξη αρτηριών" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Συγγενής Καρδιοπάθεια" />
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Άλλη καρδιακή πάθηση" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Αναπνευστικές παθήσεις"
+                android:textColor="@color/primaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkbox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Άσθμα" />
+
+            <CheckBox
+                android:id="@+id/checkbox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Εμφύσημαt" />
+
+            <CheckBox
+                android:id="@+id/checkbox7"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Χρόνια βρογχίτιδα" />
+
+
+            <CheckBox
+                android:id="@+id/checkbox8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Χρόνια Αποφρακτική Πνευμονοπάθεια" />
+
+            <CheckBox
+                android:id="@+id/checkbox9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Κυστική ίνωση" />
+
+            <CheckBox
+                android:id="@+id/checkbox10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Πνευμονικό οίδημα" />
+            <CheckBox
+                android:id="@+id/checkbox11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Άλλη αναπνευστική πάθηση" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Άλλες παθήσεις"
+                android:textColor="@color/primaryDark"
+                android:textSize="15sp"
+
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkbox12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Υψηλή αρτηριακή πίεση" />
+
+            <CheckBox
+                android:id="@+id/checkbox13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="Διαβήτη" />
+
+            <CheckBox
+                android:id="@+id/checkbox14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:onClick="onCheckboxClicked"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Είμαι / Είναι καπνιστής" />
+
+            <Button
+                android:id="@+id/offer_help"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="207dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="80dp"
+                android:text="υποβολη"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                app:rippleColor="@color/primaryDark"
+                app:strokeColor="@color/colorPrimary" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
